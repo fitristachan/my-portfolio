@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+    --color-pinkflow: #e77e9b;
+    --color-darkflow: #5c4e5f;
+}
