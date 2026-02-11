@@ -23,10 +23,10 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <h1 className="text-5xl font-bold text-pink-600 mb-4">
+          <h1 className="text-4xl font-bold text-pink-600">
             My Best Projects
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-2">
             Let's learn about all of my best and favorite projects!
           </p>
         </motion.div>
