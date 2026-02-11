@@ -24,7 +24,7 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedInd
         duration: 0.4,
         ease: [0.34, 1.56, 0.64, 1]
       }}
-      className="relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl flex-shrink-0"
+      className="relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-xl flex-shrink-0"
     >
       
       <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-90`} />
