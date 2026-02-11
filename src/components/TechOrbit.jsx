@@ -204,7 +204,7 @@ const TechOrbit = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% {
             transform: translate(-50%, -50%) translateY(0px);

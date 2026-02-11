@@ -20,7 +20,7 @@ export default function Home() {
               className="text-2xl text-darkflow hover:text-pink-600">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/fitristachan"
+            <a href="https://www.github.com/fitristachan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl text-darkflow hover:text-pink-600">
@@ -38,9 +38,13 @@ export default function Home() {
         </p>
         <br/>
         {/* arahin ke drive aja isinya cv */}
-        <button className="bg-pink-600 text-white p-2 rounded hover:shadow hover:bg-pinkflow ">
-          <a href="https://drive.google.com/drive/folders/1Zoir2L53ovrUN7O6WqKS2vf81P8rKZbx?usp=sharing"  className="flex items-center gap-2" target="_blank" rel="noopener noreferrer"> Download CV <FaDownload/> </a> 
-        </button>
+          <a href="https://www.drive.google.com/drive/folders/1Zoir2L53ovrUN7O6WqKS2vf81P8rKZbx?usp=sharing"  
+            className="flex items-center gap-2 bg-pink-600 text-white p-2 rounded hover:shadow hover:bg-pinkflow inline-flex" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          > 
+            Download CV <FaDownload/> 
+          </a>
       </div>
 
       <div className="flex justify-center relative w-36 h-36 mx-32 group">
