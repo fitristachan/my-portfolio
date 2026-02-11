@@ -20,13 +20,13 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-6 text-sm">
           {menuItems.map((item) => (
             <li key={item.name}>
-              <a href={item.href} className="hover:text-rose-800 p-2 transition-colors">
+              <a href={item.href} className="hover:text-rose-800 active:text-rose-800 p-2 transition-colors">
                 {item.name}
               </a>
             </li>
           ))}
           <li>
-            <a href="#contact" className="border border-pink-600 px-4 py-2 rounded text-pink-600 hover:bg-pink-600 hover:text-white transition-all">
+            <a href="#contact" className="border border-pink-600 px-4 py-2 rounded text-pink-600 hover:bg-pink-600 active:bg-pink-600 hover:text-white active:text-white transition-all">
               Contact Me
             </a>
           </li>
@@ -60,7 +60,7 @@ export default function Navbar() {
                   <a 
                     href={item.href} 
                     onClick={() => setIsOpen(false)}
-                    className="block hover:text-rose-800"
+                    className="block hover:text-rose-800 active:text-rose-800"
                   >
                     {item.name}
                   </a>

@@ -18,13 +18,13 @@ export default function Home() {
         <a href="https://www.linkedin.com/in/fitri-sagita-4a530a210/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl md:text-2xl text-darkflow hover:text-pink-600 transition-colors">
+          className="text-3xl md:text-2xl text-darkflow hover:text-pink-600 active:text-pink-600 transition-colors">
           <FaLinkedin />
         </a>
         <a href="https://www.github.com/fitristachan"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl md:text-2xl text-darkflow hover:text-pink-600 transition-colors">
+          className="text-3xl md:text-2xl text-darkflow hover:text-pink-600 active:text-pink-600 transition-colors">
           <FaGithub />
         </a>
       </div>
@@ -39,7 +39,7 @@ export default function Home() {
         </p>
         <div className="mt-8">
           <a href="https://www.drive.google.com/drive/folders/1Zoir2L53ovrUN7O6WqKS2vf81P8rKZbx?usp=sharing"
-            className="flex items-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:bg-rose-700 transition-all inline-flex"
+            className="flex items-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:bg-rose-700 active:shadow-lg active:bg-rose-700  transition-all inline-flex"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,14 +55,14 @@ export default function Home() {
           <img
             src={gita}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-sm opacity-50 transition-all duration-300 group-hover:-translate-x-4 group-hover:-translate-y-4"
+            className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-sm opacity-50 transition-all duration-300 group-hover:-translate-x-4 group-hover:-translate-y-4 group-active:-translate-x-4 group-active:-translate-y-4"
           />
 
           {/* layer belakang 2 */}
           <img
             src={gita}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-md opacity-30 transition-all duration-300 group-hover:translate-x-4 group-hover:translate-y-4"
+            className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-md opacity-30 transition-all duration-300 group-hover:translate-x-4 group-hover:translate-y-4 group-active:-translate-x-4 group-active:-translate-y-4"
           />
 
           {/* gambar utama */}

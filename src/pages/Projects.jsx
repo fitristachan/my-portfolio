@@ -6,6 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [activedIndex, setActivedIndex] = useState(null);
 
   return (
     <motion.section
@@ -40,6 +41,8 @@ export default function Projects() {
             index={index}
             hoveredIndex={hoveredIndex}
             setHoveredIndex={setHoveredIndex}
+            activedIndex={activedIndex}
+            setActivedIndex={setActivedIndex}
           />
         ))}
       </div>
@@ -50,7 +53,7 @@ export default function Projects() {
         transition={{ delay: 0.8 }}
         className="text-center text-gray-500 text-sm mt-16"
       >
-        Hover over each card to explore more
+        Hover or click over each card to explore more
       </motion.p>
     </motion.section>
   );

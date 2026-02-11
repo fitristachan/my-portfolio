@@ -105,7 +105,7 @@ export default function Contacts() {
               <button
                 type="submit"
                 disabled={isSending}
-                className={`flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 rounded-lg transition-all shadow-lg ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 active:bg-pink-700 text-white font-semibold py-3 rounded-lg transition-all shadow-lg ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {isSending ? "Sending..." : <><FaPaperPlane size={16} /> Send Message</>}
               </button>
@@ -131,8 +131,8 @@ export default function Contacts() {
             </div>
 
             <div className="flex flex-col gap-6">
-              <a href="mailto:fitristarius@gmail.com" className="flex items-center gap-4 text-gray-700 hover:text-pink-600 transition-colors group">
-                <div className="p-4 bg-pink-50 rounded-full group-hover:bg-pink-600 group-hover:text-white transition-all">
+              <a href="mailto:fitristarius@gmail.com" className="flex items-center gap-4 text-gray-700 hover:text-pink-600 active:text-pink-600 transition-colors group">
+                <div className="p-4 bg-pink-50 rounded-full group-hover:bg-pink-600 group-hover:text-white group-active:bg-pink-600 group-active:text-white transition-all">
                   <FaEnvelope size={20} />
                 </div>
                 <span className="font-medium">fitristarius@gmail.com</span>
@@ -143,7 +143,7 @@ export default function Contacts() {
                         href="https://www.linkedin.com/in/fitri-sagita-4a530a210/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-4 bg-white border border-pink-100 rounded-2xl shadow-sm text-pink-600 hover:bg-pink-600 hover:text-white transition-all transform hover:-translate-y-1 flex items-center justify-center"
+                        className="p-4 bg-white border border-pink-100 rounded-2xl shadow-sm text-pink-600 hover:bg-pink-600 hover:text-white active:bg-pink-600 active:text-white transition-all transform hover:-translate-y-1 active:-translate-y-1 flex items-center justify-center"
                         >
                         <FaLinkedin size={22} />
                     </a>
@@ -151,7 +151,7 @@ export default function Contacts() {
                         href="https://github.com/fitristachan"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-4 bg-white border border-pink-100 rounded-2xl shadow-sm text-pink-600 hover:bg-pink-600 hover:text-white transition-all transform hover:-translate-y-1 flex items-center justify-center"
+                        className="p-4 bg-white border border-pink-100 rounded-2xl shadow-sm text-pink-600 hover:bg-pink-600 hover:text-white active:text-white transition-all transform hover:-translate-y-1 active:-translate-y-1 flex items-center justify-center"
                         >
                         <FaGithub size={22} />
                     </a>               

@@ -51,13 +51,14 @@ export default function About() {
                       <motion.div
                       key={index}
                       whileHover={{ scale: 1.05 }}
+                      whileActive={{ scale: 1.05 }}
                       className="relative group p-[1.5px] rounded-full overflow-hidden" // Container untuk border gradasi
                       >
                       {/* Layer Gradasi (Muncul saat hover) */}
-                      <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r ${badge.color}`} />
+                      <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 bg-gradient-to-r ${badge.color}`} />
                       
                       {/* Layer Border Default (Biasa) */}
-                      <div className="absolute inset-0 bg-neutral-200 group-hover:hidden" />
+                      <div className="absolute inset-0 bg-neutral-200 group-hover:hidden group-active:hidden" />
 
                       {/* Konten Badge */}
                       <div className={`relative px-4 py-2 rounded-full ${badge.bg} ${badge.text} text-sm font-semibold transition-all`}>

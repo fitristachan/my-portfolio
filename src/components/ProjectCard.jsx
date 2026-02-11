@@ -1,30 +1,38 @@
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }) => {
-  const isHovered = hoveredIndex === index;
-  const isOtherHovered = hoveredIndex !== null && hoveredIndex !== index;
+const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedIndex, setActivedIndex }) => {
+
+  const isExpanded = hoveredIndex === index || activedIndex === index;
+  const isOtherExpanded = (hoveredIndex !== null && hoveredIndex !== index) || (activedIndex !== null && activedIndex !== index);
+  const currentSelectedIndex = hoveredIndex !== null ? hoveredIndex : activedIndex;
 
   return (
     <motion.div
       onHoverStart={() => setHoveredIndex(index)}
       onHoverEnd={() => setHoveredIndex(null)}
+      
+      onTap={() => {
+        setActivedIndex(activedIndex === index ? null : index);
+      }}
+
       animate={{
-        width: isHovered ? "400px" : "120px",
-        x: isOtherHovered && index > hoveredIndex ? "280px" : "0px"
+        width: isExpanded ? "400px" : "120px",
+        x: isOtherExpanded && index > currentSelectedIndex ? "280px" : "0px"
       }}
       transition={{
         duration: 0.4,
         ease: [0.34, 1.56, 0.64, 1]
       }}
-      className="relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl"
+      className="relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl flex-shrink-0"
     >
       
       <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-90`} />
       
+
       <motion.div
         animate={{
-          opacity: isHovered ? 0 : 1,
+          opacity: isExpanded ? 0 : 1,
         }}
         transition={{ duration: 0.2 }}
         className="absolute inset-0 flex items-center justify-center"
@@ -39,12 +47,15 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }) => {
         </div>
       </motion.div>
 
+ 
       <motion.div
+        initial={false}
         animate={{
-          opacity: isHovered ? 1 : 0,
-          scale: isHovered ? 1 : 0.8
+          opacity: isExpanded ? 1 : 0,
+          scale: isExpanded ? 1 : 0.8,
+          pointerEvents: isExpanded ? "auto" : "none" 
         }}
-        transition={{ duration: 0.3, delay: isHovered ? 0.1 : 0 }}
+        transition={{ duration: 0.3, delay: isExpanded ? 0.1 : 0 }}
         className="absolute inset-0 p-6 flex flex-col justify-between"
       >
         <div>
