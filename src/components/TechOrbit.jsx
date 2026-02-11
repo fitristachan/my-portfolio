@@ -7,17 +7,17 @@ const TechOrbit = () => {
   // Define your tech stack with experience years and project counts
   const techStack = [
     { 
-      name: 'React', 
+      name: 'React & Angular', 
       icon: '⚛️', 
-      experience: '2+', 
-      projects: 8,
+      experience: '1+', 
+      projects: 2,
       color: 'from-cyan-400 to-blue-500',
       position: { top: '15%', left: '15%' }
     },
     { 
       name: 'Python', 
       icon: '🐍', 
-      experience: '2+', 
+      experience: '1+', 
       projects: 6,
       color: 'from-blue-400 to-yellow-500',
       position: { top: '15%', left: '90%' }
@@ -26,15 +26,15 @@ const TechOrbit = () => {
       name: 'Kotlin', 
       icon: '🟠', 
       experience: '2+', 
-      projects: 7,
+      projects: 6,
       color: 'from-purple-400 to-blue-500',
       position: { top: '65%', left: '95%' }
     },
     { 
       name: '.NET', 
       icon: '🟣', 
-      experience: '2+', 
-      projects: 7,
+      experience: '1', 
+      projects: 2,
       color: 'from-purple-500 to-indigo-600',
       position: { top: '45%', left: '80%' }
     },
@@ -49,40 +49,40 @@ const TechOrbit = () => {
     { 
       name: 'Git', 
       icon: '📦', 
-      experience: '3+', 
-      projects: 15,
+      experience: '4+', 
+      projects: 35,
       color: 'from-orange-500 to-red-600',
       position: { top: '80%', left: '30%' }
     },
     { 
       name: 'Excel', 
       icon: '📊', 
-      experience: '1+', 
-      projects: 4,
+      experience: '2+', 
+      projects: 6,
       color: 'from-green-500 to-emerald-600',
       position: { top: '65%', left: '12%' }
     },
     { 
       name: 'Postman', 
       icon: '🧪', 
-      experience: '2+', 
-      projects: 9,
+      experience: '1', 
+      projects: 2,
       color: 'from-orange-400 to-red-500',
       position: { top: '45%', left: '25%' }
     },
     { 
       name: 'Tailwind', 
       icon: '🎨', 
-      experience: '2+', 
-      projects: 6,
+      experience: '1+', 
+      projects: 2,
       color: 'from-cyan-300 to-blue-400',
       position: { top: '30%', left: '40%' }
     },
     { 
-      name: 'Laravel', 
+      name: 'Laravel/Codeigniter', 
       icon: '🔴', 
-      experience: '3+', 
-      projects: 12,
+      experience: '1+', 
+      projects: 3,
       color: 'from-red-500 to-orange-600',
       position: { top: '30%', left: '65%' }
     }
@@ -194,11 +194,17 @@ const TechOrbit = () => {
           <div className="w-6 h-6 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 flex items-center justify-center text-white font-bold border border-darkflow/20">
             2+
           </div>
-          <span>Years Experience</span>
+          <span>Years Work Experience</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full bg-gradient-to-r from-green-400 to-purple-500 flex items-center justify-center text-white font-bold border border-darkflow/20">
+            4+
+          </div>
+          <span>Years Learning Experience</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center text-white font-bold border border-darkflow/20">
-            15+
+            20+
           </div>
           <span>Projects</span>
         </div>

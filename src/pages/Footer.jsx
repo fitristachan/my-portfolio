@@ -6,7 +6,7 @@ export default function Footer() {
                 <ul className="flex gap-6 text-lg justify-center">
                     <li><a href="#home" className="hover:text-rose-800">Home</a></li>
                     <li><a href="#about" className="hover:text-rose-800">About</a></li>
-                    {/* <li><a href="#skiils" className="hover:text-rose-800">Skills</a></li> */}
+                    <li><a href="#skills" className="hover:text-rose-800">Skills</a></li>
                     <li><a href="#projects" className="hover:text-rose-800">Projects</a></li>
                     <li><a href="#contact" className="hover:text-rose-800">Contact Me</a></li>
                 </ul>
@@ -14,6 +14,7 @@ export default function Footer() {
                 <hr/>
                 <br/>
                 <p className="text-darkflow">©2026 a website portfolio by <strong>Fitri Sagita</strong></p>
+                <p className="text-darkflow">Developed with Vite + React + Tailwind + Frame Motion with 🩷</p>
         </div>
     </footer>
   );

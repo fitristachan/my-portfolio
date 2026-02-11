@@ -10,7 +10,7 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 pt-40 pb-40 py-16"
+      className="grid grid-cols-3 md:grid-cols-3 items-center gap-8 pt-40 pb-40 py-16"
     >
       <DotBackground/>
       <div className="flex flex-col px-32 items-center gap-2 ">
@@ -47,7 +47,7 @@ export default function Home() {
           </a>
       </div>
 
-      <div className="flex justify-center relative w-36 h-36 mx-32 group">
+      <div className="flex justify-center relative w-36 h-36 md:mx-32 group">
           
           {/* layer belakang 1 */}
           <img
