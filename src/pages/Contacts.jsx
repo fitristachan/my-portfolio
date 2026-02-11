@@ -30,7 +30,7 @@ export default function Contacts() {
           setIsSending(false);
         },
         (error) => {
-          console.log("FAILED...", error);
+          // console.log("FAILED...", error.text);
           setStatus("Failed to send message. Please try again.");
           setIsSending(false);
         }
@@ -55,7 +55,6 @@ export default function Contacts() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
-          {/* SISI KIRI: Email Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
