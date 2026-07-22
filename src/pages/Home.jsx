@@ -10,7 +10,7 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="relative flex flex-col md:grid md:grid-cols-3 items-center gap-12 md:gap-8 pt-32 pb-20 md:pt-40 md:pb-40 px-6 max-w-6xl mx-4"
+      className="relative flex flex-col md:grid md:grid-cols-3 items-center gap-12 md:gap-8 pt-32 pb-20 md:pt-40 md:pb-40 px-6"
     >
       <DotBackground />
 
