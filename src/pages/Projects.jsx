@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import DotBackground from "../components/DotBackground";
 import projectsData from "../components/ProjectsData";
+import proProjectsData from "../components/ProProjectsData";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
@@ -17,7 +18,7 @@ export default function Projects() {
       className="relative flex flex-col items-center justify-center pt-32 py-16 px-8 overflow-hidden min-h-screen"
     >
       <DotBackground />
-      
+
       <div className="text-center mb-16 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,13 +26,42 @@ export default function Projects() {
           transition={{ delay: 0.2 }}
         >
           <h1 className="text-4xl font-bold text-pink-600">
-            My Best Projects
+            Professional Work Projects
           </h1>
           <p className="text-gray-500 mt-2">
-            Let's learn about all of my best and favorite projects!
+            Real industry work with real project cases!
           </p>
         </motion.div>
       </div>
+
+      <div className="flex gap-6 items-center justify-center flex-wrap max-w-7xl">
+        {proProjectsData.map((project, index) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            index={index}
+            hoveredIndex={hoveredIndex}
+            setHoveredIndex={setHoveredIndex}
+            activedIndex={activedIndex}
+            setActivedIndex={setActivedIndex}
+          />
+        ))}
+      </div>
+
+      <div className="relative flex flex-col items-center py-10">
+          {/* gradient handoff line: teal → pink */}
+          <div className="w-40 h-[2px] bg-gradient-to-r from-teal-400 via-slate-400 to-pink-500 rounded-full mb-4" />
+          
+          <p className="text-sm text-slate-500 font-medium tracking-wide flex items-center gap-2">
+            That's the corporate side
+            <span className="animate-bounce inline-block">👾</span>
+            here's the fun stuff
+          </p>
+
+          <p className="text-sm text-slate-500 font-medium tracking-wide flex items-center gap-2 mt-2">
+            My college and fun projects in Github!
+          </p>
+        </div>
 
       <div className="flex gap-6 items-center justify-center flex-wrap max-w-7xl">
         {projectsData.map((project, index) => (
