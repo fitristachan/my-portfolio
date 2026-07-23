@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-16 bg-neutral-100">
+      <main className="bg-neutral-100">
         <Home />
         <About />
         <Skills />

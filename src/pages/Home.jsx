@@ -10,11 +10,11 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="home"
-      className="relative flex flex-col md:grid md:grid-cols-3 items-center gap-12 md:gap-8 pt-32 pb-20 md:pt-40 md:pb-40 px-6"
+      className="relative h-screen flex flex-col md:grid md:grid-cols-3 items-center justify-center gap-12 md:gap-8 px-6"
     >
       <DotBackground />
 
-      <div className="flex flex-row md:flex-col items-center justify-center gap-6 md:gap-4 order-2 md:order-1 md:ms-32">
+      <div className="flex flex-row md:flex-col items-center justify-center gap-6 md:gap-4 order-2 md:order-1">
         <a href="https://www.linkedin.com/in/fitri-sagita-4a530a210/"
           target="_blank"
           rel="noopener noreferrer"
