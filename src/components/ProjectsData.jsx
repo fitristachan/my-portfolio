@@ -6,7 +6,8 @@ const projectsData = [
     description: "Building and evaluating models for detecting specific regions on receipts and invoices using Deep Learning and OCR libraries for information extraction.",
     tech: ["Python", "Deep Learning", "OCR", "Computer Vision"],
     color: "from-purple-500 to-pink-500",
-    link: "https://github.com/fitristachan/invoice-image-processing"
+    link: "https://github.com/fitristachan/invoice-image-processing",
+    image:  "../images/invoice_project.jpg"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ const projectsData = [
     description: "EDA and talent data analysis using pandas and linear regression with interactive Streamlit dashboard connected to Llama AI LLM for job description generation.",
     tech: ["Python", "Pandas", "Streamlit", "LLM", "SQL"],
     color: "from-blue-500 to-cyan-500",
-    link: "https://github.com/fitristachan/talent-match-analysis"
+    link: "https://github.com/fitristachan/talent-match-analysis",
+    image: "../images/talent_project.png"
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ const projectsData = [
     description: "Comprehensive air quality data analysis with 420,768 data points. Built for Dicoding submission with detailed insights and visualizations.",
     tech: ["Python", "Pandas", "Data Analysis", "Visualization"],
     color: "from-green-500 to-emerald-500",
-    link: "https://github.com/fitristachan/Air-Quality-Data-Analytic"
+    link: "https://github.com/fitristachan/Air-Quality-Data-Analytic",
+    image: "../images/air_quality_project.png"
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ const projectsData = [
     description: "Interactive data project using Streamlit, pandas, plotly, and SQL to visualize personnel data from multiple sources including databases, APIs, and CSV files.",
     tech: ["Streamlit", "Pandas", "Plotly", "SQL"],
     color: "from-orange-500 to-red-500",
-    link: "https://github.com/fitristachan/Analisis-Data-Pegawai"
+    link: "https://github.com/fitristachan/Analisis-Data-Pegawai",
+    image: "../images/employee_project.png"
   },
   {
     id: 5,
@@ -42,7 +46,8 @@ const projectsData = [
     description: "A diet lectin application with image processing capabilities built using Kotlin, Jetpack Compose, and TensorFlow Lite for smart nutrition tracking.",
     tech: ["Kotlin", "Jetpack Compose", "TensorFlow Lite"],
     color: "from-yellow-500 to-amber-500",
-    link: "https://github.com/fitristachan/dietin"
+    link: "https://github.com/fitristachan/dietin",
+    image: "../images/dietin.png"
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ const projectsData = [
     description: "Aksara legana recognition application using API integration, Kotlin, Jetpack Compose, and TensorFlow Lite for character recognition.",
     tech: ["Kotlin", "Jetpack Compose", "TensorFlow Lite", "API"],
     color: "from-indigo-500 to-purple-500",
-    link: "https://github.com/fitristachan/Aksara"
+    link: "https://github.com/fitristachan/Aksara",
+    image: "../images/aksara.png"
   }
 ];
 

@@ -1,4 +1,4 @@
-import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
+import { FaCode, FaExternalLinkAlt, FaLock } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedIndex, setActivedIndex }) => {
@@ -17,14 +17,13 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedInd
       }}
 
       animate={{
-        width: isExpanded ? "400px" : "120px",
-        x: isOtherExpanded && index > currentSelectedIndex ? "280px" : "0px"
+        width: isExpanded ? "520px" : "120px",
       }}
       transition={{
         duration: 0.4,
         ease: [0.34, 1.56, 0.64, 1]
       }}
-      className="relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-xl flex-shrink-0"
+      className="relative h-[600px] rounded-2xl overflow-hidden cursor-pointer shadow-xl flex-shrink-0 snap-x"
     >
       
       <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-90`} />
@@ -58,6 +57,15 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedInd
         transition={{ duration: 0.3, delay: isExpanded ? 0.1 : 0 }}
         className="absolute inset-0 p-6 flex flex-col justify-between"
       >
+        {/* image 16:9 */}
+        <div className="w-full rounded-lg overflow-hidden mb-2 border border-white/20 flex-shrink-0">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full"
+          />
+        </div>
+
         <div>
           <div className="flex items-center gap-2 mb-3">
             <FaCode className="w-5 h-5 text-white" />
@@ -85,17 +93,24 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex, activedInd
             ))}
           </div>
 
-          <motion.a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold text-sm hover:bg-white/90 transition-colors group"
-          >
-            View on GitHub
-            <FaExternalLinkAlt className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </motion.a>
+          {project.link ? (
+            <motion.a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold text-sm hover:bg-white/90 transition-colors group"
+            >
+              View on GitHub
+              <FaExternalLinkAlt className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </motion.a>
+          ) : (
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white/70 rounded-lg font-semibold text-sm border border-white/20">
+              <FaLock className="w-3.5 h-3.5" />
+              Confidential
+            </div>
+          )}
         </div>
       </motion.div>
 

@@ -6,8 +6,10 @@ import proProjectsData from "../components/ProProjectsData";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [activedIndex, setActivedIndex] = useState(null);
+  const [hoveredProjectIndex, setHoveredProjectIndex] = useState(null);
+  const [activedProjectIndex, setActivedProjectIndex] = useState(null);
+  const [hoveredProProjectIndex, setHoveredProProjectIndex] = useState(null);
+  const [activedProProjectIndex, setActivedProProjectIndex] = useState(null);
 
   return (
     <motion.section
@@ -34,16 +36,16 @@ export default function Projects() {
         </motion.div>
       </div>
 
-      <div className="flex gap-6 items-center justify-center flex-wrap max-w-7xl">
+      <div className="flex gap-6 items-center overflow-x-auto pb-4 max-w-7xl scrollbar-thin scrollbar-thumb-pink-400/50 scrollbar-track-transparent">
         {proProjectsData.map((project, index) => (
           <ProjectCard
             key={project.id}
             project={project}
             index={index}
-            hoveredIndex={hoveredIndex}
-            setHoveredIndex={setHoveredIndex}
-            activedIndex={activedIndex}
-            setActivedIndex={setActivedIndex}
+            hoveredIndex={hoveredProProjectIndex}
+            setHoveredIndex={setHoveredProProjectIndex}
+            activedIndex={activedProProjectIndex}
+            setActivedIndex={setActivedProProjectIndex}
           />
         ))}
       </div>
@@ -63,16 +65,16 @@ export default function Projects() {
           </p>
         </div>
 
-      <div className="flex gap-6 items-center justify-center flex-wrap max-w-7xl">
+      <div className="flex gap-6 items-center overflow-x-auto pb-4 max-w-7xl scrollbar-thin scrollbar-thumb-pink-400/50 scrollbar-track-transparent snap-x snap-mandatory">
         {projectsData.map((project, index) => (
           <ProjectCard
             key={project.id}
             project={project}
             index={index}
-            hoveredIndex={hoveredIndex}
-            setHoveredIndex={setHoveredIndex}
-            activedIndex={activedIndex}
-            setActivedIndex={setActivedIndex}
+            hoveredIndex={hoveredProjectIndex}
+            setHoveredIndex={setHoveredProjectIndex}
+            activedIndex={activedProjectIndex}
+            setActivedIndex={setActivedProjectIndex}
           />
         ))}
       </div>
