@@ -12,7 +12,7 @@ const proProjectsData = [
   {
     id: 2,
     category: "Mobile Development",
-    title: "Insurance Mobile System",
+    title: "Manulife Mobile System",
     description: "Shipped a full Android app in just 7 days using Ionic & Angular — freelance work for PT RDS's Manulife tender bid.",
     tech: ["Ionic", "Angular.JS", "Javascript"],
     color: "from-yellow-500 to-amber-500",
@@ -22,12 +22,12 @@ const proProjectsData = [
   {
     id: 3,
     category: "Full Stack Development",
-    title: "Administration System for The Ministry",
-    description: "End-to-end backend & frontend development — building REST APIs in C# with NHibernate ORM, backed by PostgreSQL, and integrating seamlessly with the client-side app.",
+    title: "Taspen Life Individu System",
+    description: "End-to-end backend & frontend development — building REST APIs in C# with NHibernate ORM, backed by PostgreSQL, for business process in Taspen Life.",
     tech: [".NET", "Swagger", "Blazor", "NHibernate"],
     color: "from-purple-500 to-pink-500",
     link: "",
-    image: "../images/kemenkumham_project.png"
+    image: "../images/taspen_project.png"
   },
 
 ];
