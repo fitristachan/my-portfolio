@@ -7,7 +7,7 @@ const TechOrbit = () => {
   // Define your tech stack with experience years and project counts
   const techStack = [
     { 
-      name: 'Javascript (React, Angular, Nest)', 
+      name: 'Javascript (Next, Vue, Angular)', 
       icon: '⚛️', 
       experience: '1+', 
       projects: 2,
