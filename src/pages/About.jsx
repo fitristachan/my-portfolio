@@ -26,7 +26,7 @@ export default function About() {
                 <div className="text-justify">
                 <p>
                     I’m <strong>Fitri Sagita</strong>, an Informatics Engineering graduate with experience in 
-                    full stack development, Android development, data processing, and software quality assurance. 
+                    full stack development, Android development, data engineering, and software quality assurance. 
                     I’ve worked with REST APIs, databases, and testing workflows to build reliable, 
                     data-driven applications. I’m passionate about writing clean code, ensuring software quality, 
                     and turning complex problems into practical solutions.

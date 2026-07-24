@@ -35,7 +35,7 @@ export default function Home() {
         </h1>
         <p className="mt-4 font-semibold text-darkflow text-sm md:text-base">
           • Full Stack Developer • Mobile Developer
-          <br /> • Data Analyst • QA Engineer
+          <br /> • Data Engineer • QA Engineer
         </p>
         <div className="mt-8">
           <a href="https://www.drive.google.com/drive/folders/1Zoir2L53ovrUN7O6WqKS2vf81P8rKZbx?usp=sharing"
